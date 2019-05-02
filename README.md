@@ -10,4 +10,4 @@ In order to begin using the application use the following steps:
 - Open up any internet browser and go to the url '127.0.0.1:8000/login'
 - From there you can log in using authorized user credentials, and if you have none, you can use the sign up page to create credentials. Once you have signed up correctly, you will automatically be logged in.
 
-In order to create, edit or delete clients or projects, you will need to use admin credentials to login at '127.0.0.1:8000/admin' (the credentials are: username - peter, password - kollege13)
+In order to create, edit or delete clients or projects, you will need to use admin credentials to login at '127.0.0.1:8000/admin' (the credentials are: username - peter, password - Kollege13)

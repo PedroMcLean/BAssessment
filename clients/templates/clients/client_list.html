@@ -2,6 +2,10 @@
 {% load static from staticfiles %}
 
 {% block content %}
+  <form class="projects-link" action="/projects/" method="get">
+    {% csrf_token %}
+    <button type="submit">View Projects</button>
+  </form>
   <h1><u>Client List</u></h1>
   <div class="clients">
     {% for client in clients %}

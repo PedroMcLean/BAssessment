@@ -1,15 +1,12 @@
+{% extends 'base_layout.html' %}
 {% load static from staticfiles %}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="/static/styles.css">
-  </head>
-  <body>
-    <h1><img src="/static/logo.png" width="300" height="60"/></h1>
-    <h1>Project List</h1>
+{% block content %}
+  <form class="clients-link" action="/clients/" method="get">
+    {% csrf_token %}
+    <button type="submit">View Clients</button>
+  </form>
+  <h1>Project List</h1>
     <div class="projects">
       {% for project in projects %}
         <div class="project">
@@ -18,5 +15,4 @@
         </div>
       {% endfor %}
     </div>
-  </body>
-</html>
+{% endblock %}
